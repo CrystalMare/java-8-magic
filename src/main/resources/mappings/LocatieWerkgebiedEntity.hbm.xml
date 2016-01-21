@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="nl.ireal.hibernate.demo.impl.jpa.LocatieWerkgebiedEntity" table="locatie_werkgebied" schema="demo">
+        <composite-id mapped="true" class="nl.ireal.hibernate.demo.impl.jpa.LocatieWerkgebiedEntityPK">
+            <key-property name="locatie" column="LOCATIE"/>
+            <key-property name="werkgebied" column="WERKGEBIED"/>
+        </composite-id>
+        <property name="isDefault" column="IS_DEFAULT"/>
+    </class>
+</hibernate-mapping>
